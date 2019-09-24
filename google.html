@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>
+
+    Google 
+
+</title>
+
+</head>
+
+
+<body>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<link rel="stylesheet" href="googlestyle.css">
+
+<div id="logo">
+
+    <p><img class="googlelogo" src="googlelogo.png" title="Google Logo"></a></p>
+
+
+</div>
+
+
+
+<label for="site-search"></label>
+
+
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+
+<div id="buttons" >
+
+<aside>
+<button style="background-color: 242,242,242; border : none; width: 150px">Recherche Google</button>
+
+
+<button style="background-color: 242,242,242; border : none; width: 150px;" >J'ai de la chance</button>
+
+</aside>
+
+</div>
+
+
+
+<footer>
+    
+<a id="publicite" href="https://ads.google.com/intl/fr_fr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000016-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"> Publicité </a>
+
+<a id="Entreprise" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none"> Entreprise </a>
+
+<a id="propos" href="https://about.google/intl/fr_fr/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">A propos</a>
+
+<a id='comment' href="https://www.google.com/search/howsearchworks/?fg=1"> Comment fonctionne la recherche Google? </a>
+
+<a id="infos" href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=fr&fg=1&visit_id=637049243883248764-31438293&rd=1"> Infos consommateurs </a>
+
+
+<a id = "confidentialité" href="https://policies.google.com/privacy?fg=1"> Confidentialité </a>
+
+
+<a id = "conditions" href="https://policies.google.com/terms?fg=1"> Conditions </a>
+
+
+
+
+<div class="dropdown"> 
+  <button onclick="myFunction()" class="dropbtn">Paramètre</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Paramètre de recherche</a>
+    <a href="#">Recherche avancé</a>
+    <a href="#">Vos données dans la recherche google</a>
+    <a href="#"> Historique </a>
+    <a href="#"> Aide sur la recherche </a>
+    <a href="#"> Envoyer des commentaires
+  </div>
+</div>
+
+
+
+
+
+</footer>
+
+
+        
+     
+    
+   
+    
+</body>
+</html>
+
